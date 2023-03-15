@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.Models.ProfilePage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+                <Label Text="Username:" />
+                <Label x:Name="UsernameLabel" />
+
+                <Label Text="Email:" />
+                <Label x:Name="EmailLabel" />
+
+                <Label Text="First Name:" />
+                <Label x:Name="FirstNameLabel" />
+
+                <Label Text="Surname:" />
+                <Label x:Name="SurnameLabel" />
+
+                <Label Text="Date of Birth:" />
+                <Label x:Name="DateOfBirthLabel" />
+
+                <Button Text="Edit Profile" Clicked="OnEditProfileButtonClicked" />
+
+
+        
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

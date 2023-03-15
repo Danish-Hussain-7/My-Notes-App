@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.Login.LoginPage"
+              Title="My Notes"
+    NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Enter your details" FontSize="Title" FontAttributes="Bold" TextColor="Black" TextDecorations="Underline" HorizontalTextAlignment="Center"/>
+            <Label Text="Username" FontSize="Title" TextDecorations="Underline" TextColor="Black"  />
+            <Entry x:Name="UsernameEntry" Placeholder="Username" />
+            <Label Text="Password" FontSize="Title" TextDecorations="Underline" TextColor="Black"  />
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />
+            <Button x:Name="SignInButton" Text="Sign In" Clicked="OnSignInButtonClicked" />
+            <Button x:Name="CreateAccountButton" Text="Create Account" Clicked="OnCreateAccountButtonClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

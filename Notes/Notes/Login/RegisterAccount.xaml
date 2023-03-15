@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.Login.RegisterAccount"
+              Title="My Notes"
+    NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Create your Account" FontSize="Large" />
+            <Label Text="Email"  />
+            <Entry x:Name="EmailEntry" Placeholder="Enter Your Email" />
+            <Label Text="First Name" />
+            <Entry x:Name="FirstNameEntry" Placeholder="Enter your First Name" />
+            <Label Text="Surname" />
+            <Entry x:Name="SurnameEntry" Placeholder="Enter your Surname" />
+            <Entry x:Name="UsernameEntry" Placeholder="Enter your Username" />
+            <Entry x:Name="PasswordEntry" Placeholder=" Enter your Password" IsPassword="True" />
+            <Label Text="Date of Birth" />
+            <DatePicker x:Name="DateOfBirthEntry" />
+            <Button Text="Create Account" Clicked="OnCreateAccountButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
