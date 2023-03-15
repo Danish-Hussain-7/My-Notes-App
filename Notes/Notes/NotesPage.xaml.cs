@@ -22,9 +22,7 @@ namespace Notes
 
             listView.ItemsSource = await App.Database.GetNotesAsync();
         }
-        private async void OnSearchButtonPressed(object sender, EventArgs e)
-        {
-        }
+       
 
         async void OnNoteAddedClicked(object sender, EventArgs e)
         {

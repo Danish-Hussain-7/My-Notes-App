@@ -12,10 +12,9 @@
                     Value="{StaticResource AppBackgroundColor}" />
         </Style>
     </ContentPage.Resources>
-    
+
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Sign Out" Clicked="OnSignOutClicked" />
         <ToolbarItem Text="+"
                      Clicked="OnNoteAddedClicked" />
     </ContentPage.ToolbarItems>
@@ -54,6 +53,10 @@
                     BackgroundColor="Transparent"
                     TextColor="Black"
                     Clicked="OnEditProfileButtonClicked" />
+            <Button Text="Sign out"
+                    BackgroundColor="Transparent"
+                    TextColor="Black"
+                    Clicked="OnSignOutClicked" />
         </StackLayout>
     </Grid>
 
