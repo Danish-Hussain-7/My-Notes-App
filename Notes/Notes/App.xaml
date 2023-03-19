@@ -7,8 +7,8 @@
         <Thickness x:Key="PageMargin">15</Thickness>
 
         <!-- Colors -->
-        <Color x:Key="AppBackgroundColor">#FFFFFFF0</Color>
-        <Color x:Key="NavigationBarColor">#1976D2</Color>
+        <Color x:Key="AppBackgroundColor">lightgray</Color>
+        <Color x:Key="NavigationBarColor">Black</Color>
         <Color x:Key="NavigationBarTextColor">#FFFFFFF0</Color>
 
         <!-- Implicit styles -->

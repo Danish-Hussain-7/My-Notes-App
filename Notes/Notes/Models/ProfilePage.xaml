@@ -5,6 +5,7 @@
     <ContentPage.Content>
         <Grid>
             <StackLayout>
+                
                 <Label Text="Username:" />
                 <Label x:Name="UsernameLabel" />
 

@@ -43,5 +43,9 @@ namespace Notes.Data
         {
             return _database.DeleteAsync(note);
         }
+        public Task<List<Note>> SearchNotesAsync(string searchText)
+        {
+            return _database.Table<Note>().Where(n => n.Text.Contains(searchText)).ToListAsync();
+        }
     }
 }

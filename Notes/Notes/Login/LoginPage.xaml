@@ -4,7 +4,15 @@
              x:Class="Notes.Login.LoginPage"
               Title="My Notes"
     NavigationPage.HasBackButton="False">
+    <ContentPage.Resources>
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="BackgroundColor" Value="Black" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+</ContentPage.Resources>
+
     <ContentPage.Content>
+        
         <StackLayout Padding="10">
             <Label Text="Enter your details" FontSize="Title" FontAttributes="Bold" TextColor="Black" TextDecorations="Underline" HorizontalTextAlignment="Center"/>
             <Label Text="Username" FontSize="Title" TextDecorations="Underline" TextColor="Black"  />
