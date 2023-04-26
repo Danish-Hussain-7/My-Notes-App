@@ -12,12 +12,10 @@
 </ContentPage.Resources>
 
     <ContentPage.Content>
-        
+
         <StackLayout Padding="10">
-            <Label Text="Enter your details" FontSize="Title" FontAttributes="Bold" TextColor="Black" TextDecorations="Underline" HorizontalTextAlignment="Center"/>
-            <Label Text="Username" FontSize="Title" TextDecorations="Underline" TextColor="Black"  />
+            <Label Text="Enter your details" FontSize="Large" />
             <Entry x:Name="UsernameEntry" Placeholder="Username" />
-            <Label Text="Password" FontSize="Title" TextDecorations="Underline" TextColor="Black"  />
             <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" />
             <Button x:Name="SignInButton" Text="Sign In" Clicked="OnSignInButtonClicked" />
             <Button x:Name="CreateAccountButton" Text="Create Account" Clicked="OnCreateAccountButtonClicked"/>

@@ -7,6 +7,8 @@ using System.Linq;
 using Xamarin.Forms;
 using Notes.Models;
 using Notes.Login;
+using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace Notes
 {
@@ -19,6 +21,22 @@ namespace Notes
 
 
         }
+        private async void OnShareClicked(object sender, EventArgs e)
+        {
+            if (listView.SelectedItem != null)
+            {
+                // Get the selected note
+                Note selectedNote = (Note)listView.SelectedItem;
+
+                // Share the note's text
+                await Share.RequestAsync(new ShareTextRequest
+                {
+                    Text = selectedNote.Text,
+                    Title = "Share Note"
+                });
+            }
+        }
+
         async void UpdateNotesList()
         {
             List<Note> notes = await App.Database.GetNotesAsync();
@@ -32,8 +50,16 @@ namespace Notes
             UpdateNotesList();
 
         }
+        private async void OnLogoImageTapped(object sender, EventArgs e)
+        {
+            // Get the image element
+            var image = (Image)sender;
 
+            // Rotate the image 360 degrees clockwise
+            await image.RotateTo(360, 1000);
+        }
 
+      
         async void OnNoteAddedClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new NoteEntryPage
@@ -105,6 +131,18 @@ namespace Notes
                 picker.SelectedIndex = -1;
             }
         }
+        private async void OnPickerTapped(object sender, EventArgs e)
+        {
+            var pickerLayout = (StackLayout)sender;
 
+            // Scale up the Picker
+            await pickerLayout.ScaleTo(1.1, 100, Easing.Linear);
+
+            // Open the Picker
+            navigationPicker.Focus();
+
+            // Scale down the Picker
+            await pickerLayout.ScaleTo(1, 100, Easing.Linear);
+        }
     }
 }

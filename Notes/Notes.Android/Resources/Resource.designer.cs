@@ -8340,25 +8340,28 @@ namespace Notes.Droid
 			public const int notification_bg_normal_pressed = 2131165294;
 			
 			// aapt resource value: 0x7F07006F
-			public const int notification_icon_background = 2131165295;
+			public const int notification_icon = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int notification_template_icon_bg = 2131165296;
+			public const int notification_icon_background = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int notification_template_icon_low_bg = 2131165297;
+			public const int notification_template_icon_bg = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int notification_tile_bg = 2131165298;
+			public const int notification_template_icon_low_bg = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int notify_panel_notification_icon_bg = 2131165299;
+			public const int notification_tile_bg = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int tooltip_frame_dark = 2131165300;
+			public const int notify_panel_notification_icon_bg = 2131165300;
 			
 			// aapt resource value: 0x7F070075
-			public const int tooltip_frame_light = 2131165301;
+			public const int tooltip_frame_dark = 2131165301;
+			
+			// aapt resource value: 0x7F070076
+			public const int tooltip_frame_light = 2131165302;
 			
 			static Drawable()
 			{

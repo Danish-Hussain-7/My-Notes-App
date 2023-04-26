@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Notes.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace Notes.Login
 		{
 			InitializeComponent ();
 		}
+      
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -24,13 +26,14 @@ namespace Notes.Login
             if (Xamarin.Essentials.Preferences.ContainsKey("Username") && Xamarin.Essentials.Preferences.ContainsKey("Password"))
             {
                 // Hide the "Create Account" button
-                CreateAccountButton.IsVisible = true;
+                SignInButton.IsVisible = true;
 
             }
             else
             {
                 // Hide the "Sign In" button
-                SignInButton.IsVisible = true;
+
+                CreateAccountButton.IsVisible = true;
 
             }
 
